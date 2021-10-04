@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Auth</title>
+</head>
+<body>
+    <form action="predict" method="get">
+        
+        <p>
+        <label for="variance">enter a variance</label>
+        <input type="text" name="variance" id="var" placeholder="variance">
+        </p>
+
+        <p>
+        <label for="skewness">enter a skewness</label>
+        <input type="text" name="skewness" id="sk" placeholder="skewness">
+        </p>
+
+        <p>
+        <label for="curtosis">enter a curtosis</label>
+        <input type="text" name="curtosis" id="cu" placeholder="curtosis">
+        </p>
+
+        <label for="entropy">enter a entropy</label>
+        <input type="text" name="entropy" id="en" placeholder="entropy">
+
+        <p><button type="submit">Predict</button></p>
+        
+    </form>
+    
+    <h3>{{predict_text}}</h3>
+</body>
+</html>
