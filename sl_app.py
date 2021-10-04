@@ -36,10 +36,10 @@ def main():
   if st.button("Predict"):
     result=predict_note(var,sk,ct,et)
     if result[0]==0:
-      Note="Fake"
+      Note="The note is Fake"
     else:
-      Note="Real"
-  st.success("The note is "+ Note)
+      Note="The note is Real"
+  st.success(Note)
   if st.button("About"):
     st.text("Predicting Bank Note Authentication")
     st.text("Built with Streamlit")
